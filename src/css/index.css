@@ -47,7 +47,7 @@ ul li button:hover {
   background-color: rgb(229, 231, 235);
 }
 
-.sold-out {
+.complete {
   text-decoration: line-through;
-  color: gray;
+  color: #ff3232;
 }

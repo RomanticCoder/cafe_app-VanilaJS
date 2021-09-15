@@ -8,71 +8,81 @@
     <link rel="shortcut icon" href="src/images/favicon.ico" />
     <link rel="icon" href="src/images/favicon.png" />
     <link rel="stylesheet" href="src/css/index.css" />
+    <script src="https://kit.fontawesome.com/006f14bf04.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="app" class="px-4">
+    <div id="app" clas
+    s="px-4">
         <div class="d-flex justify-center mt-5 w-100">
             <div class="w-100">
                 <header class="my-4">
                     <a href="/" class="text-black">
-                        <h1 class="text-center font-bold">🌝 Moonbucks menu control</h1>
+                        <h1 class="text-center font-bold">😊 Project Manager</h1>
                     </a>
                     <nav class="d-flex justify-center flex-wrap">
-                        <button data-category-name="espresso" class="cafe-category-name btn bg-white shadow mx-1">
-                            ☕ espresso
+                        <button data-category-name="front-end" class="project-category-name btn bg-white shadow mx-1">
+                            💻 front-end
                         </button>
-                        <button data-category-name="frappuccino" class="cafe-category-name btn bg-white shadow mx-1">
-                            🥤 frappuccino
+                        <button data-category-name="back-end" class="project-category-name btn bg-white shadow mx-1">
+                            👩‍💻 back-end
                         </button>
-                        <button data-category-name="blended" class="cafe-category-name btn bg-white shadow mx-1">
-                            🍹 blended
-                        </button>
-                        <button data-category-name="teavana" class="cafe-category-name btn bg-white shadow mx-1">
-                            🫖 teavana
-                        </button>
-                        <button data-category-name="desert" class="cafe-category-name btn bg-white shadow mx-1">
-                            🍰 desert
+                        <button data-category-name="mobile" class="project-category-name btn bg-white shadow mx-1">
+                            📱 mobile
                         </button>
                     </nav>
                 </header>
                 <main class="mt-10 d-flex justify-center">
                     <div class="wrapper bg-white p-10">
                         <div class="heading d-flex justify-between">
-                            <h2 class="mt-1">☕ 에스프레소 메뉴 관리</h2>
-                            <span class="mr-2 mt-4 menu-count">총 0개</span>
+                            <h2 id="category-title" class="mt-1">💻 front-end project</h2>
+                            <span class="mr-2 mt-4 project-count"></span>
                         </div>
-                        <form id="espresso-menu-form">
+                        <form id="project-form">
                             <div class="d-flex w-100">
-                                <label for="espresso-menu-name" class="input-label" hidden>
-                                    에스프레소 메뉴 이름
-                                </label>
-                                <input type="text" id="espresso-menu-name" name="espressoMenuName" class="input-field"
-                                    placeholder="에스프레소 메뉴 이름" autocomplete="off" />
-                                <button type="button" name="submit" id="espresso-menu-submit-button"
-                                    class="input-submit bg-green-600 ml-2">
-                                    확인
+                                <div class="inputs">
+                                    <label for="project-name" class="input-label" hidden>
+                                        project name
+                                    </label>
+                                    <input type="text" id="project-name" name="projectName" class="input-field"
+                                        placeholder="project name" autocomplete="off" />
+                                    <label for="project-link" class="input-label" hidden>
+                                        project link
+                                    </label>
+                                    <input type="text" id="project-link" name="projectLink" class="input-field"
+                                        placeholder="project link" autocomplete="off" />
+    
+                                </div>
+
+                                <button type="button" name="submit" id="project-submit-button"
+                                class="input-submit bg-green-600 ml-2">
+                                ADD
                                 </button>
                             </div>
                         </form>
-                        <ul id="espresso-menu-list" class="mt-3 pl-0">
-                            <li class="menu-list-item d-flex items-center py-2">
-                                <span class="w-100 pl-2 menu-name">${name}</span>
-                                <button type="button" class="bg-gray-50 text-gray-500 text-sm mr-1 menu-edit-button">
-                                    수정
+                        <ul id="project-list" class="mt-3 pl-0">
+                            <li>hdiididi</li>
+                            <li data-project-id="1" class="project-list-item d-flex items-center py-2">
+                                <span class="w-100 pl-2 project-name">hdiidididi</span>
+                                <button type="button"
+                                class="bg-gray-50 text-gray-500 text-sm mr-1 project-sold-out-button">
+                                품절
                                 </button>
-                                <button type="button" class="bg-gray-50 text-gray-500 text-sm menu-remove-button">
-                                    삭제
+                                <button type="button" class="bg-gray-50 text-gray-500 text-sm mr-1 project-edit-button">
+                                수정
+                                </button>
+                                <button type="button" class="bg-gray-50 text-gray-500 text-sm project-remove-button">
+                                삭제
                                 </button>
                             </li>
-
                         </ul>
                     </div>
                 </main>
             </div>
         </div>
     </div>
-    <script type="module" src="./src/js/index.js"></script>
+    <script type="module" src="./src/js/step2.js"></script>
+    <!-- <script type="module" src="./src/js/index.js"></script> -->
 </body>
 
 </html>
